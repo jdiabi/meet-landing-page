@@ -4,6 +4,8 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ## Links
 
+- Live Site URL: [https://jdiabi.github.io/meet-landing-page/](https://jdiabi.github.io/meet-landing-page/)
+
 ## Built with
 
 - Semantic HTML5 markup
