@@ -318,7 +318,7 @@ main {
   border-radius: 0.8rem;
 }
 .meetings__built {
-  color: var(--gray);
+  color: var(--teal);
   margin-bottom: 1.6rem;
   padding: 0 2.4rem;
 }
