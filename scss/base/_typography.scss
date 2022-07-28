@@ -1,0 +1,50 @@
+@use '../abstracts' as a;
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: 900;
+    line-height: 1em;
+
+    @include a.breakpoint(hero) {
+        font-size: 4.8rem;
+    }
+
+    @include a.breakpoint(mobile) {
+        font-size: 4rem;
+        line-height: 1.1em;
+    }
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1em;
+
+    @include a.breakpoint(mobile) {
+        font-size: 3.2rem;
+        line-height: 1.125em;
+    }
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(26em / 18);
+
+    @include a.breakpoint(tablet) {
+        font-size: 1.6rem;
+        line-height: 1.625em;
+    }
+}
+
+.overline {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.625em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}

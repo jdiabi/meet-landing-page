@@ -1,0 +1,99 @@
+@use '../abstracts' as a;
+
+.together {
+    padding: 11.606rem 0 10.407rem;
+    text-align: left;
+    color: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/desktop/image-footer.jpg) ;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        z-index: -2;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--teal);
+        z-index: -1;
+        opacity: .9;
+    }
+
+    &__title {
+        max-width: 35rem;
+        margin-right: 3.5rem;
+    }
+
+    &__description {
+        max-width: 35rem;
+        margin-right: .2rem;
+    }
+
+    &__download {
+        align-self: center;
+        display: flex;
+        gap: .18em;
+    }
+
+    @include a.breakpoint(hero) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3.2rem;
+        padding: 9.2rem 0 6.6rem;
+
+        &::before {
+            background-image: url(../assets/tablet/image-footer.jpg);
+        }
+
+        &__title {
+            padding: 0 2.4rem;
+            max-width: 45.7rem;
+            margin-right: 0;
+        }
+    
+        &__description {
+            padding: 0 2.4rem;
+            max-width: 60.8rem;
+            margin-right: 0;
+            margin-bottom: .8rem;
+            font-size: 1.8rem;
+            line-height: calc(26em / 18);
+        }
+    }
+
+    @include a.breakpoint(mobile) {
+        gap: 2.4rem;
+        padding: 9.2rem 0 7.2rem;
+
+        &::before {
+            background-image: url(../assets/mobile/image-footer.jpg);
+        }
+
+        &__title {
+            max-width: 45.7rem;
+        }
+    
+        &__description {
+            max-width: 56rem;
+        }
+
+        &__download {
+            margin-left: -0.2rem;
+        }
+    }
+}

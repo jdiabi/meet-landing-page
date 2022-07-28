@@ -1,0 +1,21 @@
+@use '../abstracts' as a;
+
+body {
+    min-height: 100vh;
+    background-color: var(--white);
+    background-image: 
+        url(../assets/desktop/image-hero-left.png), 
+        url(../assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    background-position: 
+        left -3.2rem top 16.9rem, 
+        right -3.2rem top 22.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @include a.breakpoint(tablet) {
+        background-image: none;
+    }
+}

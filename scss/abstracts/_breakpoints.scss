@@ -1,0 +1,13 @@
+$breakpoints: (
+    "hero": 78.5em,
+    "hero-2": 71.875em,
+    "hero-3": 67.5em,
+    "tablet": 48em,
+    "mobile": 31.25em
+);
+
+@mixin breakpoint($size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
