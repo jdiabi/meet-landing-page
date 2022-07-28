@@ -4,7 +4,7 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ## Links
 
-- Live Site URL: [https://jdiabi.github.io/meet-landing-page/](https://jdiabi.github.io/meet-landing-page/)
+- Live Site URL: [https://jdiabi.github.io/meet-landing-page-main/](https://jdiabi.github.io/meet-landing-page-main/)
 
 ## Built with
 
